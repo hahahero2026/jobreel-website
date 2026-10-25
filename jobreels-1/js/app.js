@@ -225,4 +225,36 @@ document.addEventListener('DOMContentLoaded', () => {
             prevReel();
         }
     }
+
+    // -------------------------------------------------------------------------
+    // 6. E-Mail Bot Protection (Base64 Safe Mail Buttons & Links)
+    // -------------------------------------------------------------------------
+    const safeButtons = document.querySelectorAll('.safe-mail-btn');
+    safeButtons.forEach(btn => {
+        const setHref = () => {
+            const encoded = btn.getAttribute('data-encoded');
+            const subject = btn.getAttribute('data-subject');
+            if (encoded) {
+                try {
+                    const email = atob(encoded);
+                    const url = `mailto:${email}${subject ? `?subject=${encodeURIComponent(subject)}` : ''}`;
+                    btn.setAttribute('href', url);
+                    return url;
+                } catch (e) {
+                    console.error('Error decoding safe email button:', e);
+                }
+            }
+            return null;
+        };
+
+        const mailtoUrl = setHref();
+
+        btn.addEventListener('click', (e) => {
+            const url = mailtoUrl || setHref();
+            if (url && btn.getAttribute('href') === '#') {
+                e.preventDefault();
+                window.location.href = url;
+            }
+        });
+    });
 });
