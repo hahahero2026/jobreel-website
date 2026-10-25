@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Job-Video.de — Legal Pages CSS (Impressum & Datenschutz)
+   Meta Electric Blue Theme • Vanilla CSS
+   ========================================================================== */
+
+:root {
+    --bg-main: #030712;
+    --bg-surface: #0b132b;
+    --bg-surface-elevated: #111e38;
+    --border-color: rgba(0, 132, 255, 0.2);
+    --border-glow: rgba(0, 132, 255, 0.4);
+    --brand-blue: #0064E0;
+    --brand-electric: #0084FF;
+    --brand-cyan: #00D2FF;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-secondary);
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.legal-wrapper {
+    width: 100%;
+    max-width: 840px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 100, 224, 0.1);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--brand-electric);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 132, 255, 0.1);
+    border: 1px solid rgba(0, 132, 255, 0.25);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.back-link:hover {
+    background: rgba(0, 132, 255, 0.2);
+    border-color: var(--brand-electric);
+    transform: translateX(-3px);
+}
+
+h1 {
+    color: var(--text-primary);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+h2 {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+p, ul {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+strong {
+    color: var(--text-primary);
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+a {
+    color: var(--brand-electric);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contact-card {
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-glow);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.contact-card h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}

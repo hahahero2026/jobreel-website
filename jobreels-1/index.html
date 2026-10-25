@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Willbränder — Job-Video.de | Fotorealistische 60s JobReels für Personalberater</title>
+    <meta name="description" content="Verwandeln Sie Fach- und Führungskräfte-Mandate in 60s High-End JobReels. 100 % Mandantenschutz, 0h Drehraufwand, 3x höhere Antwortquoten im Active Sourcing.">
+    <!-- Ausgelagertes Vanilla CSS mit Cache-Busting -->
+    <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+
+    <!-- =======================================================================
+         1. FIXIERTE KOPFZEILE (HEADER & NAVIGATION)
+         Hier können Sie Logoschriftzug und Menülinks anpassen.
+         ======================================================================= -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo">
+                <span class="logo-icon">AW</span>
+                <span>ALEXANDER WILLBRÄNDER</span>
+                <span class="brand-divider">|</span>
+                <span style="color: var(--brand-cyan);">Job-Video.de</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#showroom" class="nav-link">Muster-Reels</a>
+                <a href="#preise" class="nav-link">Konditionen</a>
+                <!-- Verlinkung auf die übergeordneten Shared-Legal-Seiten im Ordner 'web' -->
+                <a href="../impressum.html" class="nav-link nav-link-btn">Kontakt</a>
+                <a href="../datenschutz.html" class="nav-link">Datenschutz</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- =======================================================================
+         2. HERO SEKTION (OPTION 1: HORIZONTALER REEL-SLIDER OBEN)
+         Präsentiert zuerst die 9:16 Video-Muster und darunter das Leistungsversprechen.
+         ======================================================================= -->
+    <section class="hero-section">
+        <div class="hero-ambient-glow"></div>
+        <div class="container hero-content-wrapper">
+            
+            <!-- HORIZONTALER 9:16 VIDEO CAROUSEL -->
+            <div class="carousel-wrapper">
+                <button class="carousel-nav-btn prev" id="carouselPrev" aria-label="Zurück">‹</button>
+                <button class="carousel-nav-btn next" id="carouselNext" aria-label="Weiter">›</button>
+
+                <div class="reel-carousel" id="reelCarousel">
+                    
+                    <!-- REEL 1: KALIBRIERUNGSTECHNIKER -->
+                    <div class="reel-card js-open-reel" 
+                         data-video="media/261009-04 Kalibrierungstechniker.mp4" 
+                         data-title="Kalibrierungstechniker">
+                        <img src="media/261009-04 Kalibrierungstechniker.jpg" alt="JobReel Kalibrierungstechniker" loading="lazy">
+                        <div class="reel-card-overlay">
+                            <span class="reel-badge-top">Präzision & Prüftechnik</span>
+                            <div class="reel-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="reel-info-bottom">
+                                <span class="reel-title">Kalibrierungstechniker</span>
+                                <span class="reel-specs">9:16 Vertical • 60s Master</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- REEL 2: FINANZBUCHHALTERIN -->
+                    <div class="reel-card js-open-reel" 
+                         data-video="media/261009-02 Finanzbuchhalterin.mp4" 
+                         data-title="Finanzbuchhalterin">
+                        <img src="media/261009-02 Finanzbuchhalterin.jpg" alt="JobReel Finanzbuchhalterin" loading="lazy">
+                        <div class="reel-card-overlay">
+                            <span class="reel-badge-top">Finance & Controlling</span>
+                            <div class="reel-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="reel-info-bottom">
+                                <span class="reel-title">Finanzbuchhalterin</span>
+                                <span class="reel-specs">9:16 Vertical • 60s Master</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- REEL 3: PROJEKTLEITER SF-BAU -->
+                    <div class="reel-card js-open-reel" 
+                         data-video="media/261009-01 Projektleiter SF-Bau.mp4" 
+                         data-title="Projektleiter SF-Bau">
+                        <img src="media/261009-01 Projektleiter SF-Bau.jpg" alt="JobReel Projektleiter SF-Bau" loading="lazy">
+                        <div class="reel-card-overlay">
+                            <span class="reel-badge-top">Schlüsselfertigbau</span>
+                            <div class="reel-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="reel-info-bottom">
+                                <span class="reel-title">Projektleiter SF-Bau</span>
+                                <span class="reel-specs">9:16 Vertical • 60s Master</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- REEL 4: ELEKTRONIKER -->
+                    <div class="reel-card js-open-reel" 
+                         data-video="media/260821-03 JobReel Elektroniker.mp4" 
+                         data-title="Elektroniker für Betriebstechnik">
+                        <img src="media/260821-03 JobReel Elektroniker.jpg" alt="JobReel Elektroniker" loading="lazy">
+                        <div class="reel-card-overlay">
+                            <span class="reel-badge-top">Industrie & Handwerk</span>
+                            <div class="reel-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="reel-info-bottom">
+                                <span class="reel-title">Elektroniker</span>
+                                <span class="reel-specs">9:16 Vertical • 60s Master</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- REEL 5: SPS-FACHKRAFT -->
+                    <div class="reel-card js-open-reel" 
+                         data-video="media/260821-02 JobReel SPS.mp4" 
+                         data-title="SPS-Programmierer / Automation">
+                        <img src="media/260821-02 JobReel SPS.jpg" alt="JobReel SPS" loading="lazy">
+                        <div class="reel-card-overlay">
+                            <span class="reel-badge-top">Automatisierungstechnik</span>
+                            <div class="reel-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="reel-info-bottom">
+                                <span class="reel-title">SPS-Fachkraft</span>
+                                <span class="reel-specs">9:16 Vertical • 60s Master</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- REEL 6: CNC-FRÄSER -->
+                    <div class="reel-card js-open-reel" 
+                         data-video="media/260821-01 JobReel CNC-Fräser.mp4" 
+                         data-title="CNC-Fräser / 5-Achs Zerspanung">
+                        <img src="media/260821-01 JobReel CNC-Fräser.jpg" alt="JobReel CNC-Fräser" loading="lazy">
+                        <div class="reel-card-overlay">
+                            <span class="reel-badge-top">Zerspanungstechnik</span>
+                            <div class="reel-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="reel-info-bottom">
+                                <span class="reel-title">CNC-Fräser</span>
+                                <span class="reel-specs">9:16 Vertical • 60s Master</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- HERO TEXT & CALL TO ACTION -->
+            <div class="hero-text-block">
+                <div class="badge">B2B RECRUITING VIDEO-EXZELLENZ • DACH-RAUM</div>
+                <h1 class="hero-headline">
+                    So erwecken Sie Fach- & Führungskräfte-Mandate <span class="text-gradient">in 60 Sekunden</span> zum Leben
+                </h1>
+                <p class="hero-subline">
+                    Bringen Sie Ihre anspruchsvollsten Suchaufträge als fotorealistisches Video-Erlebnis direkt auf die Smartphones wechselbereiter Experten. Ich inszeniere Ihre Vakanz schlüsselfertig in 9:16 – <strong>100 % diskret, 0h Drehraufwand und mit 3-fach höherer Antwortquote</strong> im Active Sourcing.
+                </p>
+                
+                <div class="hero-cta-group">
+                    <a href="#anfrage" class="btn btn-primary">
+                        Kostenloses Storyboard anfordern →
+                    </a>
+                    <a href="#showroom" class="btn btn-secondary">
+                        Muster-Reels ansehen
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =======================================================================
+         3. TRUST- & HEBEL-LEISTE (DIE 3 K.O.-ARGUMENTE AUS DEM FLYER)
+         ======================================================================= -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-grid">
+                
+                <div class="trust-item">
+                    <span class="trust-icon">⏱️</span>
+                    <div class="trust-text">
+                        <h3>0h Dreh-Aufwand vor Ort</h3>
+                        <p>Kein Kamerateam, keine störenden Freigabeschleifen beim Mandanten. Sie senden mir einfach die Stellenausschreibung – ich liefere schlüsselfertig.</p>
+                    </div>
+                </div>
+
+                <div class="trust-item">
+                    <span class="trust-icon">🛡️</span>
+                    <div class="trust-text">
+                        <h3>100 % Mandanten- & Provisionsschutz</h3>
+                        <p>Fotorealistisch generierte Arbeitswelten faszinieren emotional, ohne Firmennamen oder Standorte preiszugeben. Voller Schutz vor Direktbewerbungen.</p>
+                    </div>
+                </div>
+
+                <div class="trust-item">
+                    <span class="trust-icon">📈</span>
+                    <div class="trust-text">
+                        <h3>3x höhere Resonanz im Sourcing</h3>
+                        <p>Ein natives 60s Reel im 1:1 Chat (LinkedIn InMail / WhatsApp) bricht die Textmüdigkeit und weckt sofortige Neugier bei begehrten Fachkräften.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =======================================================================
+         4. DER MUSTER-SHOWROOM (ALLE 6 REELS IM ÜBERBLICK)
+         ======================================================================= -->
+    <section class="showroom-section" id="showroom">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Portfolio</div>
+                <h2 class="section-title">Echte Arbeitswelten für anspruchsvolle Profile</h2>
+                <p class="section-desc">Klicken Sie auf ein Video, um das 60-Sekunden-Muster im Vollbild zu starten und herunterzuladen.</p>
+            </div>
+
+            <div class="showroom-grid">
+                
+                <!-- 1. Kalibrierungstechniker -->
+                <div class="reel-card js-open-reel" data-video="media/261009-04 Kalibrierungstechniker.mp4" data-title="Kalibrierungstechniker">
+                    <img src="media/261009-04 Kalibrierungstechniker.jpg" alt="Kalibrierungstechniker" loading="lazy">
+                    <div class="reel-card-overlay">
+                        <span class="reel-badge-top">Präzisionstechnik</span>
+                        <div class="reel-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                        <div class="reel-info-bottom">
+                            <span class="reel-title">Kalibrierung</span>
+                            <span class="reel-specs">60s Master • 9:16</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Finanzbuchhalterin -->
+                <div class="reel-card js-open-reel" data-video="media/261009-02 Finanzbuchhalterin.mp4" data-title="Finanzbuchhalterin">
+                    <img src="media/261009-02 Finanzbuchhalterin.jpg" alt="Finanzbuchhalterin" loading="lazy">
+                    <div class="reel-card-overlay">
+                        <span class="reel-badge-top">Finance</span>
+                        <div class="reel-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                        <div class="reel-info-bottom">
+                            <span class="reel-title">Finanzbuchhaltung</span>
+                            <span class="reel-specs">60s Master • 9:16</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Projektleiter SF-Bau -->
+                <div class="reel-card js-open-reel" data-video="media/261009-01 Projektleiter SF-Bau.mp4" data-title="Projektleiter SF-Bau">
+                    <img src="media/261009-01 Projektleiter SF-Bau.jpg" alt="Projektleiter SF-Bau" loading="lazy">
+                    <div class="reel-card-overlay">
+                        <span class="reel-badge-top">Bauwesen</span>
+                        <div class="reel-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                        <div class="reel-info-bottom">
+                            <span class="reel-title">Projektleiter Bau</span>
+                            <span class="reel-specs">60s Master • 9:16</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Elektroniker -->
+                <div class="reel-card js-open-reel" data-video="media/260821-03 JobReel Elektroniker.mp4" data-title="Elektroniker für Betriebstechnik">
+                    <img src="media/260821-03 JobReel Elektroniker.jpg" alt="Elektroniker" loading="lazy">
+                    <div class="reel-card-overlay">
+                        <span class="reel-badge-top">Elektrotechnik</span>
+                        <div class="reel-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                        <div class="reel-info-bottom">
+                            <span class="reel-title">Elektroniker</span>
+                            <span class="reel-specs">60s Master • 9:16</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. SPS-Fachkraft -->
+                <div class="reel-card js-open-reel" data-video="media/260821-02 JobReel SPS.mp4" data-title="SPS-Fachkraft">
+                    <img src="media/260821-02 JobReel SPS.jpg" alt="SPS-Fachkraft" loading="lazy">
+                    <div class="reel-card-overlay">
+                        <span class="reel-badge-top">Automation</span>
+                        <div class="reel-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                        <div class="reel-info-bottom">
+                            <span class="reel-title">SPS-Spezialist</span>
+                            <span class="reel-specs">60s Master • 9:16</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. CNC-Fräser -->
+                <div class="reel-card js-open-reel" data-video="media/260821-01 JobReel CNC-Fräser.mp4" data-title="CNC-Fräser">
+                    <img src="media/260821-01 JobReel CNC-Fräser.jpg" alt="CNC-Fräser" loading="lazy">
+                    <div class="reel-card-overlay">
+                        <span class="reel-badge-top">Zerspanung</span>
+                        <div class="reel-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                        <div class="reel-info-bottom">
+                            <span class="reel-title">CNC-Fräser</span>
+                            <span class="reel-specs">60s Master • 9:16</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =======================================================================
+         5. DAS ZUBRINGER-PRINZIP (WIE DAS JOBREEL BEWERBER GENERIERT)
+         ======================================================================= -->
+    <section class="funnel-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Lead-System</div>
+                <h2 class="section-title">Das Zubringer-Prinzip: Vom Scroll-Stopper zum Bewerber</h2>
+                <p class="section-desc">Wie Ihr JobReel offene Vakanzen schnell mit vorqualifizierten Kandidaten füllt.</p>
+            </div>
+
+            <div class="funnel-grid">
+                
+                <div class="funnel-card">
+                    <span class="funnel-step-badge">Schritt 1 • Hook</span>
+                    <h3>1. 60s Smartphone-Hook</h3>
+                    <p>Wechselbereite Profis (30–55 Jahre) sehen das fotorealistische Video abends privat auf Instagram, Facebook oder im Chat. Der emotionale 3s-Scrollstopper bricht die Textmüdigkeit und fesselt den Blick.</p>
+                </div>
+
+                <div class="funnel-card">
+                    <span class="funnel-step-badge">Schritt 2 • Filter</span>
+                    <h3>2. Mobiles Sofort-Formular</h3>
+                    <p>Ohne Medienbruch und ohne Hürde einer externen Karriere-Website: 2 bis 3 gezielte Pflichtfragen filtern Ausbildung, Reisebereitschaft und Praxiserfahrung vor – ohne Klick-Spam.</p>
+                </div>
+
+                <div class="funnel-card">
+                    <span class="funnel-step-badge">Schritt 3 • Abschluss</span>
+                    <h3>3. Vorqualifizierte Bewerber</h3>
+                    <p>Nur ernsthafte Interessenten senden das Kurzformular ab. Die qualifizierten Kontaktdaten landen automatisch und direkt im Posteingang Ihrer Kanzlei.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =======================================================================
+         6. VERGLEICHSTABELLE: TEXT-ANSPRACHE VS. 60S HIGH-END JOBREEL
+         ======================================================================= -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Der Recruiting-Hebel</div>
+                <h2 class="section-title">Warum klassische Stellenprofile 2026 scheitern</h2>
+                <p class="section-desc">Der direkte Vergleich zwischen reinen Textanzeigen und fotorealistischen Kurzfilmen.</p>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Recruiting-Kriterium</th>
+                            <th>Reine Text-Ansprache / StepStone</th>
+                            <th class="col-reel">60s High-End JobReel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Erster Kontakt (Hook)</strong></td>
+                            <td>Hohe Lesebarriere: Text erfordert Konzentration und wird am Smartphone oft nur kurz überflogen.</td>
+                            <td class="col-reel"><strong>Aktiver Scroll-Stopper:</strong> Eine packende visuelle Hook fesselt den Blick sofort im Smartphone-Feed.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Postfach-Resonanz</strong></td>
+                            <td>Branchenüblich 8–15 %: Textnachrichten konkurrieren im Postfach mit dutzenden sehr ähnlichen Anfragen.</td>
+                            <td class="col-reel"><strong>3x höherer Rücklauf:</strong> Native Video-Vorschau bricht die Textmüdigkeit und weckt spontane Neugier.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wechselreize & Kultur</strong></td>
+                            <td>Nur beschreibend: Moderne Werkzeuge und planbare Arbeitszeiten lassen sich mit Worten kaum belegen.</td>
+                            <td class="col-reel"><strong>Sichtbare Realität:</strong> Zeigt State-of-the-Art Technik und saubere Arbeitsplätze direkt im Einsatz.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mandantenschutz</strong></td>
+                            <td>Das Diskretions-Dilemma: Strikte Anonymisierung führt im Text zwangsläufig zu austauschbaren Phrasen.</td>
+                            <td class="col-reel"><strong>100 % diskret & greifbar:</strong> Faszinierende Arbeitswelten, ohne Firmennamen oder Standorte preiszugeben.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Passiver Kandidatenmarkt</strong></td>
+                            <td>Geringe Reichweite: Erreicht nur aktiv Suchende; latent Wechselbereite (85 %) lesen selten Jobportale.</td>
+                            <td class="col-reel"><strong>Aktiviert Passiv-Markt:</strong> Holt wechselbereite Fachkräfte abends privat in ihrer Freizeit ab.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =======================================================================
+         7. TRANSPARENTE KONDITIONEN & PREISE (FESTPREISE OHNE ABO)
+         ======================================================================= -->
+    <section class="pricing-section" id="preise">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Transparente Konditionen</div>
+                <h2 class="section-title">Zwei klare Einsatzwege für Ihr Mandat</h2>
+                <p class="section-desc">Keine monatlichen Abonnements, keine versteckten Nebenkosten, kein technischer Einrichtungsaufwand.</p>
+            </div>
+
+            <div class="pricing-grid">
+                
+                <!-- MODELL 1: JOBREEL CREATIVE (FEATURED / EMPFEHLUNG) -->
+                <div class="pricing-card featured">
+                    <span class="pricing-tag">⭐ Empfehlung</span>
+
+                    <div class="pricing-header">
+                        <span class="badge" style="margin-bottom: 0.75rem; background: rgba(0, 210, 255, 0.2);">Sourcing-Turbo</span>
+                        <h3>JobReel Creative</h3>
+                        <p class="pricing-sub">Für das eigene Active Sourcing auf LinkedIn, den Socials und WhatsApp</p>
+                    </div>
+
+                    <div class="price-box">
+                        <span class="price-amount">390,- €</span>
+                        <span class="price-netto">netto pro Video</span>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li><span class="check-icon">✓</span> <strong>1x 60s High-End JobReel (9:16 Full HD):</strong> Fotorealistische KI-Arbeitswelt, Profi-Sprecherstimme & dynamische Untertitel.</li>
+                        <li><span class="check-icon">✓</span> <strong>100 % Mandantenschutz:</strong> Voller Schutz Ihres Vermittlungshonorars vor Direktbewerbungen.</li>
+                        <li><span class="check-icon">✓</span> <strong>Sendefertige MP4-Datei:</strong> Sofort einsetzbar für Active Sourcing (InMail, WhatsApp, Xing).</li>
+                        <li><span class="check-icon">✓</span> <strong>Inklusive Korrekturschleife:</strong> Feinschliff von Textbotschaften nach Ihrem Feedback.</li>
+                        <li><span class="check-icon">✓</span> <strong>Freie Budgetnutzung:</strong> Bereitgestellt zur Nutzung durch Ihr vorhandenes Recruiting-Team.</li>
+                    </ul>
+
+                    <a href="#anfrage" class="btn btn-primary">JobReel Creative anfragen</a>
+                </div>
+
+                <!-- MODELL 2: MANDATS-BOOSTER -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="badge" style="margin-bottom: 0.75rem;">Rundum-Sorglos</span>
+                        <h3>Mandats-Booster</h3>
+                        <p class="pricing-sub">Video + bezahlte Social-Media-Kampagne schlüsselfertig</p>
+                    </div>
+
+                    <div class="price-box">
+                        <span class="price-amount">690,- €</span>
+                        <span class="price-netto">netto komplett</span>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li><span class="check-icon">✓</span> <strong>Komplette JobReel-Produktion:</strong> 60s High-End Video (Einzelwert 390 €) vollständig enthalten.</li>
+                        <li><span class="check-icon">✓</span> <strong>250,- € Mediabudget inklusive:</strong> Gezielte Ausspielung im regionalen Fachkräfte-Umfeld auf Meta (Instagram / Facebook).</li>
+                        <li><span class="check-icon">✓</span> <strong>Schlüsselfertige Kampagnenführung:</strong> Ich schalte die Werbeanzeige ohne eigenen Werbeaufwand für Ihre Kanzlei.</li>
+                        <li><span class="check-icon">✓</span> <strong>Mobiles Sofort-Formular:</strong> Vorqualifizierung mit 2–3 Pflichtfragen nach Ihren genauen Kriterien.</li>
+                        <li><span class="check-icon">✓</span> <strong>Tägliche Lead-Weitergabe:</strong> Qualifizierte Bewerberkontakte gehen automatisch direkt an Sie.</li>
+                    </ul>
+
+                    <a href="#anfrage" class="btn btn-secondary">Mandats-Booster anfragen</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =======================================================================
+         8. ABSCHLUSS-CALL-TO-ACTION (NO-BRAINER STORYBOARD ANGEBOT)
+         ======================================================================= -->
+    <section class="cta-box-section" id="anfrage">
+        <div class="container">
+            <div class="cta-box">
+                <div class="badge" style="margin-bottom: 1rem;">Risikofreier Test</div>
+                <h2>Haben Sie aktuell ein Mandat, das stockt?</h2>
+                <p>
+                    Senden Sie mir einfach kurz den Link oder das PDF Ihrer offenen Vakanz. Ich prüfe die Machbarkeit und erstelle für Sie ein konkretes Drehbuch mit Konzept und Szenenablauf als PDF – <strong>vollkommen kostenfrei und unverbindlich</strong>.
+                </p>
+
+                <div class="hero-cta-group" style="margin-bottom: 0;">
+                    <a href="mailto:a.willbraender@gmx.net?subject=Unverbindliche%20JobReel%20Storyboard-Anfrage" class="btn btn-primary">
+                        ✉️ Vakanz per E-Mail einsenden
+                    </a>
+                    <a href="https://www.linkedin.com/in/alexander-willbraender" target="_blank" rel="noopener" class="btn btn-secondary">
+                        💼 Auf LinkedIn vernetzen
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =======================================================================
+         9. FUSSZEILE (FOOTER)
+         ======================================================================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <a href="#showroom">Muster-Reels</a>
+                <a href="#preise">Konditionen</a>
+                <a href="../impressum.html">Kontakt & Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+            <p class="footer-copy">
+                &copy; 2026 Alexander Willbränder • Solo-Experte & KI-Filmemacher für Personalberater. Alle Rechte vorbehalten.
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- =======================================================================
+         10. FULLSCREEN 9:16 VIDEO MODAL MIT FACEBOOK-DOWNLOAD & IN-MODAL SLIDER
+         Wird per Vanilla JS geöffnet, wenn der Nutzer auf eine Karte klickt.
+         Unterstützt Vor/Zurück (Endlos-Schleife), Pfeiltasten und Touch-Swipe.
+         ======================================================================= -->
+    <div class="video-modal-backdrop" id="videoModal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="video-modal-container">
+            
+            <!-- Modal Header mit Titel, Zähler (z. B. 1 / 6) & Facebook-Style Download Button -->
+            <div class="modal-header-bar">
+                <div class="modal-video-meta">
+                    <div class="modal-title-row">
+                        <span class="modal-title" id="modalTitle">JobReel</span>
+                        <span class="modal-counter" id="modalCounter">1 / 6</span>
+                    </div>
+                    <span class="modal-specs">9:16 Vertical • 60s Full HD</span>
+                </div>
+                
+                <div class="modal-actions">
+                    <!-- Facebook / Social Media Style Download-Button -->
+                    <a href="#" class="btn-download" id="modalDownloadBtn" download title="Video herunterladen">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Herunterladen</span>
+                    </a>
+                    
+                    <!-- Schließen Button -->
+                    <button class="btn-modal-close" id="modalCloseBtn" aria-label="Schließen">✕</button>
+                </div>
+            </div>
+
+            <!-- Player Zeile mit Insta-Style Navigations-Buttons links & rechts neben dem Video -->
+            <div class="modal-player-row">
+                <!-- Vorheriges Video Button (Links) -->
+                <button class="modal-side-btn prev" id="modalNavPrev" aria-label="Vorheriges Video">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+
+                <!-- Video Player Box (Strikt 9:16 Format) -->
+                <div class="modal-video-wrapper">
+                    <video id="modalVideo" controls playsinline preload="metadata">
+                        Ihr Browser unterstützt leider kein HTML5 Video.
+                    </video>
+                </div>
+
+                <!-- Nächstes Video Button (Rechts) -->
+                <button class="modal-side-btn next" id="modalNavNext" aria-label="Nächstes Video">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Ausgelagertes Vanilla JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
