@@ -202,6 +202,11 @@
       position: relative;
     }
 
+    /* Kunden-Ansicht: Nur Seite 1 & 2 anzeigen (Seiten 3–5 ausblenden) */
+    .a4-page:nth-of-type(n+3) {
+      display: none !important;
+    }
+
     .doc-header {
       display: flex;
       flex-direction: column;
@@ -625,6 +630,8 @@
         break-after: page !important;
         overflow: hidden !important;
       }
+      .a4-page:nth-of-type(n+3) { display: none !important; }
+      .a4-page:nth-of-type(2) { page-break-after: auto !important; break-after: auto !important; }
       .a4-page:last-of-type { page-break-after: auto !important; break-after: auto !important; }
       .doc-header { border-bottom: 2px solid #000 !important; }
       .doc-header h1, .doc-title-group h1 { color: #000 !important; }
@@ -865,7 +872,7 @@
 
     <div class="page-footer">
       <span>JobReel Produktions-Drehbuch • 261106 Wirtschaftsjurist / Volljurist (m/w/d) – Contract & Claim Manager</span>
-      <span>SEITE 1 VON 5</span>
+      <span>SEITE 1 VON 2</span>
     </div>
   </div>
 
@@ -995,7 +1002,7 @@
 
     <div class="page-footer">
       <span>JobReel Produktions-Drehbuch • 261106 Wirtschaftsjurist / Volljurist (m/w/d) – Contract & Claim Manager</span>
-      <span>SEITE 2 VON 5</span>
+      <span>SEITE 2 VON 2</span>
     </div>
   </div>
 
